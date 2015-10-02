@@ -1,0 +1,101 @@
+prog1d
+
+	int cont = 0
+	status = 0
+	indica = 0
+	leia(palavra)
+
+	while palavra == simbolo:
+
+		se palavra[cont] == "@" AND indica == 0:
+
+			cont = cont + 1
+			status = 2
+			indica = 1
+
+		se palavra[cont] == "@" AND indica == 1:
+
+			cont = cont + 1
+			status = 1
+			indica == 0
+
+		se palavra[cont] == "/":
+
+			cont = cont + 1
+			status = 2
+			indica = 3
+
+		se palavra[cont] == "/" AND indica == 3:
+
+			cont = cont + 1
+			status = 2
+			indica == 4	
+
+		se palavra[cont] == "l" AND "d" AND indica == 4:
+
+			cont = cont + 1
+			status = 1
+			indica == 5
+
+		se palavra[cont] == "/" AND indica == 5:
+
+			cont = cont + 1
+			status = 2
+			indica = 6
+
+		se palavra[cont] == "/" AND indica == 6:
+
+			cont = cont + 1
+			status = 3
+			indica == 0		
+
+		se palavra[cont] == "l" && "d":
+
+			cont = cont + 1
+			status = 1
+			indica == 0
+
+		se palavra[cont] == "+":
+
+			cont = cont + 1
+			status = 2
+			indica = 7
+
+		se palavra[cont] == "+" AND indica == 7:
+
+			cont = cont + 1
+			status = 2
+			indica == 8	
+
+		se palavra[cont] == "l" AND "d" AND indica == 8:
+
+			cont = cont + 1
+			status = 2
+			indica == 9
+
+		se palavra[cont] == "+" AND indica == 9:
+
+			cont = cont + 1
+			status = 2
+			indica = 10
+
+		se palavra[cont] == "+" AND indica == 10:
+
+			cont = cont + 1
+			status = 3
+			indica == 0			
+
+			
+		se palavra[cont] == "\n":
+
+			break
+
+
+
+	if status == 1 && 3:
+
+		print("Reconhece")
+
+	else
+	
+		print("Não reconhece")	

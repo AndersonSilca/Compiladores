@@ -1,0 +1,52 @@
+prog1c
+
+	int cont = 0
+	status = 0
+	indica = 0
+	leia(palavra)
+
+	while palavra == simbolo:
+
+		se palavra[cont] == "<" && "+" faça
+
+			cont = cont + 1
+			status = 1
+			indica = 1
+
+		se indica = 1:
+
+			se palavra[cont] == ">" && "=":
+
+				cont = cont + 1
+				status = 1
+				indica = 0
+			
+
+		se palavra[cont] == "":" &&	">"
+	
+			cont = cont + 1
+			status = 1
+			indica = 2
+		
+		se indica == 2:
+
+			se palavra[cont] == "=":
+				cont = cont + 1
+				status = 1
+				indica = 0	
+
+
+		se palavra[cont] = ";" && "," && "." && "-" && "*" && "(" && ")" && "/" && "@":
+
+			cont = cont + 1
+			status = 1				
+
+
+if status == 1:
+
+	imprimi("Reconhece")
+
+else
+	
+	imprimi("Não reconhece")
+		

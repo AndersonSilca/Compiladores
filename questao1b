@@ -1,0 +1,40 @@
+prog1b
+
+	int cont = 0
+	status = 0
+	leia(palavra)
+
+	while palavra == simbolo:
+
+		se palavra[cont] == "l":
+
+			cont = cont + 1
+			status = 1
+
+
+		se palavra[cont] == "-":
+
+			cont = cont + 1
+			status = 2
+
+		if status == 2:
+		
+			se palavra[cont] == "l":
+
+				cont = cont + 1
+				status = 1
+
+
+if status == 1:
+
+	print("Reconhece")
+
+else
+
+	print"Não recconhece"
+
+
+
+
+					
+
